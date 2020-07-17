@@ -34,4 +34,17 @@ public class HomePage extends BasePage {
         IOSElement signUpButton = (IOSElement) driver.findElement(By.className("frontpage-sign-up-cta"));
         signUpButton.click();
     }
+
+    //TODO: figure out how to click the hamburger menu button
+
+    //------
+    //onScreen() is not currently supported (apparently for years).
+//        System.out.println("sign up button x coordinate: " + signUpButton.getCoordinates().onScreen().getX());
+//        System.out.println("sign up button y coordinate: " + signUpButton.getCoordinates().onScreen().getY());
+
+//        System.out.println("sign up button x coordinate onPage: " + signUpButton.getCoordinates().onPage().getX());
+//        System.out.println("sign up button y coordinate onPage: " + signUpButton.getCoordinates().onPage().getY());
+
+//        System.out.println("sign up button x coordinate inViewPort: " + signUpButton.getCoordinates().inViewPort().getX());
+//        System.out.println("sign up button y coordinate inViewPort: " + signUpButton.getCoordinates().inViewPort().getY());
 }
