@@ -1,3 +1,5 @@
+package stepDefinitions;
+
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.WebElement;
