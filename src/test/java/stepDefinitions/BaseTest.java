@@ -27,7 +27,6 @@ public class BaseTest {
             exception.printStackTrace();
         } finally {
             driver = new IOSDriver<WebElement>(url, desiredCapabilities);
-            homePage = new HomePage(driver);
         }
     }
 
