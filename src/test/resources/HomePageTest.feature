@@ -4,4 +4,4 @@ Feature: test functionality of the Home Page on builtin.com web app on IOS
     Given builtin.com is loaded and home page is visible
     When user swipes down to the sign up button
     And user presses the sign up button
-    Then community page is displayed
+    Then onboarding page is displayed
