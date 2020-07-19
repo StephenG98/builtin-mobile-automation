@@ -14,7 +14,7 @@ public class OnboardingPage extends BasePage {
         driver.get("https://builtin.com/onboarding");
     }
 
-    public boolean urlIsCommunityPageURL() {
+    public boolean urlIsOnboardingPageURL() {
         return driver.getCurrentUrl().equals("https://builtin.com/onboarding");
     }
 
