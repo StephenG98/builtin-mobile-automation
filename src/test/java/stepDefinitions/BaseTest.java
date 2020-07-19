@@ -30,8 +30,11 @@ public class BaseTest {
         }
     }
 
-    public void cleanUp() {
-        driver.close();
-        driver.quit();
+     protected void cleanUp(IOSDriver<WebElement> driver) {
+//        driver.close();
+//        driver.quit();
+         this.driver = driver;
+         this.driver.close();
+         this.driver.quit();
     }
 }

@@ -8,7 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import pages.LoginPage;
 
-public class LoginPageStepDefinitions {
+public class LoginPageStepDefinitions extends BaseTest {
 
     private IOSDriver<WebElement> driver;
     private Injector injector;
@@ -33,6 +33,8 @@ public class LoginPageStepDefinitions {
 
         loginPage = new LoginPage(driver);
         Assert.assertTrue(loginPage.isAtLoginPage());
+
+        cleanUp(driver);
     }
 
 //    @When("sign up button is pressed inside login page")

@@ -28,6 +28,8 @@ public class OnboardingPageStepDefinitions extends BaseTest {
         onboardingPage = new OnboardingPage(driver);
         Assert.assertTrue(onboardingPage.urlIsOnboardingPageURL());
         Assert.assertTrue(onboardingPage.isLoginButtonEnabled());
+
+        cleanUp(driver);
     }
 
     @Given("driver is initialized and onboarding page is displayed")

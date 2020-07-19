@@ -6,7 +6,6 @@ import cucumber.api.java.en.When;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.touch.offset.PointOption;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import pages.HomePage;
 
