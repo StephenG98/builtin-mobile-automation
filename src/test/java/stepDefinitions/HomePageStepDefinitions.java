@@ -56,12 +56,5 @@ public class HomePageStepDefinitions extends BaseTest {
     @And("user presses the sign up button")
     public void pressSignUpButton() {
         homePage.pressSignUpButton();
-
-//        baseTest.cleanUp();
     }
-
-//    @Then("new page is displayed")
-//    public void communityPageIsDisplayed() {
-//
-//    }
 }

@@ -37,7 +37,6 @@ public class OnboardingPageStepDefinitions extends BaseTest {
         driver = baseTest.driver;
 
         injector.setDriver(driver);
-//        homePage = new HomePage(driver);
         onboardingPage = new OnboardingPage(driver);
     }
 
@@ -45,9 +44,4 @@ public class OnboardingPageStepDefinitions extends BaseTest {
     public void whenUserPressesLoginButton() {
         onboardingPage.pressLoginButton();
     }
-
-//    @Given("community page is displayed")
-//    public void givenCommunityPageIsDisplayed() {
-//
-//    }
 }
