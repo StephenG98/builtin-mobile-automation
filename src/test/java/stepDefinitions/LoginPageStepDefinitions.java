@@ -15,6 +15,9 @@ public class LoginPageStepDefinitions extends BaseTest {
 
     private LoginPage loginPage;
 
+    public LoginPageStepDefinitions(Injector injector) {
+        this.injector = injector;
+    }
 
     @Given("driver is initialized and login page is displayed")
     public void givenLoginPageIsDisplayed() {
@@ -27,7 +30,7 @@ public class LoginPageStepDefinitions extends BaseTest {
         Assert.assertTrue(loginPage.isAtLoginPage());
     }
 
-    @Then("login page is displayed")
+    @Then("the login page is displayed")
     public void thenLoginPageIsDisplayed() {
         this.driver = injector.getDriver();
 
